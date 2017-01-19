@@ -1,0 +1,21 @@
+{
+    "name": "inviqa/stash-redis-driver-bundle",
+    "description": "Custom Redis driver replacement for Stash",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Samuel Roze",
+            "email": "sroze@inviqa.com"
+        },
+        {
+            "name": "David Lukac",
+            "email": "dlukac@inviqa.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "symfony/symfony": "^v2.8",
+        "tedivm/stash": "^v0.14"
+    }
+}

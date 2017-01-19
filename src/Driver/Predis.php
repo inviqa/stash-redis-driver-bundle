@@ -1,12 +1,12 @@
 <?php
 
-namespace Inviqa\StashRedisDriver\Driver;
+namespace Inviqa\StashRedisDriverBundle\Driver;
 
 use Predis\Client;
 use Stash;
 
 /**
- * Class CustomRedisDriver
+ * Class Predis
  *
  * This class was originally developed by Samuel Roze <sroze@inviqa.com> for the FT project. The original version was
  * locked to specific Predis version, which didn't allow updating the eZ Platform, so new version had to be created.
@@ -19,7 +19,7 @@ use Stash;
  *
  * @todo Create independent bundle, identify Predis version to tie to.
  *
- * @package InviqaOverridesBundle\Stash
+ * @package Inviqa\StashRedisDriverBundle\Driver
  */
 class Predis extends Stash\Driver\AbstractDriver
 {

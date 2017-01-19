@@ -1,36 +1,20 @@
 <?php
 
-namespace Inviqa\StashDriver;
+namespace Inviqa\StashRedisDriverBundle;
 
+use Inviqa\StashRedisDriverBundle\Driver\Predis;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Stash\DriverList;
 
 /**
  * Class StashRedisDriverBundle
  *
- * @package Inviqa\StashDriver
+ * @package Inviqa\StashRedisDriverBundle
  */
 class StashRedisDriverBundle extends Bundle
 {
-
-}
-
-
-namespace InviqaOverridesBundle;
-
-use InviqaOverridesBundle\Stash\Predis;
-use Stash\DriverList;
-use Symfony\Component\HttpKernel\Bundle\Bundle;
-
-/**
- * Class InviqaOverridesBundle
- *
- * @package InviqaOverridesBundle
- */
-class InviqaOverridesBundle extends Bundle
-{
-
     /**
-     * InviqaOverridesBundle constructor.
+     * StashRedisDriverBundle constructor.
      */
     public function __construct()
     {
@@ -39,4 +23,3 @@ class InviqaOverridesBundle extends Bundle
         DriverList::registerDriver('Redis', Predis::class);
     }
 }
-

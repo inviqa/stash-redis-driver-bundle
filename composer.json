@@ -13,9 +13,15 @@
             "email": "dlukac@inviqa.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Inviqa\\StashRedisDriverBundle\\": "src/"
+        }
+    },
     "require": {
         "php": ">=5.6",
         "symfony/symfony": "^v2.8",
-        "tedivm/stash": "^v0.14"
+        "tedivm/stash": "^v0.14",
+        "predis/predis": "^1.1"
     }
 }
